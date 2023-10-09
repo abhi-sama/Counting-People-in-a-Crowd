@@ -1,4 +1,61 @@
-## Intro
+## Counting People in a Crowd
+
+## Overview
+
+This project focuses on accurately counting the number of people in a crowd using computer vision techniques. It accepts input in the form of images, videos, or even live streams, providing real-time crowd counting capabilities. The project leverages state-of-the-art object detection models, specifically YOLOv2 and YOLOv3, implemented with TensorFlow. Additionally, it utilizes OpenCV for image processing and DarkFlow for YOLO model integration. This crowd counting system has applications in disaster recovery planning and crowd management.
+
+## Key Components
+
+1. **YOLO (You Only Look Once)**: YOLO is a real-time object detection system that can detect and classify objects in an image or video frame. YOLOv2 and YOLOv3 are the versions used in this project.
+
+2. **TensorFlow**: TensorFlow is an open-source machine learning framework developed by Google. It is used for training and deploying deep learning models, including YOLO.
+
+3. **OpenCV**: OpenCV is an essential library for computer vision tasks. It is used for image and video input/output, pre-processing, and post-processing.
+
+4. **DarkFlow**: DarkFlow is a software framework that allows YOLO models to be integrated and run with ease. It simplifies the process of using YOLO for object detection.
+
+## How it Works
+
+1. **Input**: You can provide input in the form of images, videos, or live video streams.
+
+2. **Object Detection**: The YOLOv2 or YOLOv3 model is used to detect people within the input data. YOLO can locate and classify multiple objects in a single pass.
+
+3. **Counting**: The detected people are counted, and the count is displayed on the output. Real-time counting can be achieved for live video streams.
+
+## Usage
+
+To use this crowd counting system, follow these steps:
+
+1. Install the necessary libraries and dependencies, including TensorFlow, OpenCV, and DarkFlow.
+
+2. Configure the YOLO model (either YOLOv2 or YOLOv3) for people detection. Pre-trained weights can be used, or you can train the model on custom data for specific environments.
+
+3. Input your images, videos, or live video streams.
+
+4. Execute the system, which will process the input and provide a real-time or batch count of people in the crowd.
+
+## Applications
+
+- **Disaster Recovery Planning**: This system can be used to estimate the number of people in disaster-affected areas, aiding in resource allocation and response planning.
+
+- **Crowd Management**: It can be employed for crowd monitoring at events, transportation hubs, and public spaces, helping authorities manage and ensure safety.
+
+- **Security**: The system can assist in security monitoring by counting people in restricted or sensitive areas.
+
+## Future Improvements
+
+- Integration with additional sensors for more accurate crowd monitoring.
+- Real-time tracking of individuals for movement analysis.
+- Integration with cloud-based services for scalability and remote monitoring.
+
+## Conclusion
+
+The Crowd People Counting system using YOLOv2/YOLOv3 and TensorFlow offers an effective solution for estimating the number of people in a crowd. It is versatile, capable of handling various input sources, and can be applied in disaster recovery planning, crowd management, and security scenarios. The project can be further improved and customized based on specific requirements and use cases.
+
+## Readme for "Counting People in a Crowd" ends here.
+## Below is the Readme for DarkFlow model we imported for the project. 
+
+
 
 [![Build Status](https://travis-ci.org/thtrieu/darkflow.svg?branch=master)](https://travis-ci.org/thtrieu/darkflow) [![codecov](https://codecov.io/gh/thtrieu/darkflow/branch/master/graph/badge.svg)](https://codecov.io/gh/thtrieu/darkflow)
 
@@ -37,9 +94,6 @@ You can choose _one_ of the following three ways to get started with darkflow.
 ## Update
 
 **Android demo on Tensorflow's** [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorFlowYoloDetector.java)
-
-**I am looking for help:**
- - `help wanted` labels in issue track
 
 ## Parsing the annotations
 
