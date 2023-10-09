@@ -20,7 +20,7 @@ This project focuses on accurately counting the number of people in a crowd usin
 
 2. **Object Detection**: The YOLOv2 or YOLOv3 model is used to detect people within the input data. YOLO can locate and classify multiple objects in a single pass.
 
-3. **Counting**: The detected people are counted, and the count is displayed on the output. Real-time counting can be achieved for live video streams.
+3. **Counting**: The detected people are counted, and the count is displayed on the output. Real-time counting can be achieved for live video streams
 
 ## Usage
 
